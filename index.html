@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Border Radius Visualization</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="main.css">
+ </head><!-- end head -->
+ <body>
+   <header id="global-header">
+     <div class="container">
+       <div class="title">
+         <strong>Jessica Felts-Jensen</strong><span class="divider">//</span>thejessicafelts
+       </div>
+       <div class="links">
+         <ul class="row">
+           <li>
+             <a href="https://www.github.com/thejessicafelts/border-radius-visualization" target="_blank">View Project Repository</a>
+           </li>
+           <li>
+             <a href="https://thejessicafelts.github.io">View all Projects</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </header><!-- update header#global-header -->
+   <div class="container">
+     <h1>Border Radius Visualization</h1>
+     <div class="description">
+       The goal of this project is to visualize how setting <code>border-radius</code> &ndash; with only one value, from <code>0%</code> to <code>50%</code> will affect a div. When using <code>border-radius</code>, more than one value may be used, to further customize the look of the div you're styling, but for the purpose of this visualization, we will be using only one value. When using <code>border-radius</code>, values other than percentages, such as pixels, ems, or rems, may be used, but for the purpose of this visualization, we will be using only percentages.
+     </div>
+     <div id="box" class="box">
+       <!-- Box will be minipulated for the visualization -->
+     </div><!-- end .box -->
+     <div id="slider" class="slider">
+       <!-- Slider which allows the user to manipulate the box -->
+       <input id="radius" type="range" list="tickmarks" min="0" max="50" step="1" value="0">
+       <datalist id="tickmarks">
+         <option value="0">
+         <option value="1">
+         <option value="2">
+         <option value="3">
+         <option value="4">
+         <option value="5">
+         <option value="6">
+         <option value="7">
+         <option value="8">
+         <option value="9">
+         <option value="10">
+         <option value="11">
+         <option value="12">
+         <option value="13">
+         <option value="14">
+         <option value="15">
+         <option value="16">
+         <option value="17">
+         <option value="18">
+         <option value="19">
+         <option value="20">
+         <option value="21">
+         <option value="22">
+         <option value="23">
+         <option value="24">
+         <option value="25">
+         <option value="26">
+         <option value="27">
+         <option value="28">
+         <option value="29">
+         <option value="30">
+         <option value="31">
+         <option value="32">
+         <option value="33">
+         <option value="34">
+         <option value="35">
+         <option value="36">
+         <option value="37">
+         <option value="38">
+         <option value="39">
+         <option value="40">
+         <option value="41">
+         <option value="42">
+         <option value="43">
+         <option value="44">
+         <option value="45">
+         <option value="46">
+         <option value="47">
+         <option value="48">
+         <option value="49">
+         <option value="50">
+       </datalist>
+       <div class="description">
+         <code>border-radius: <span id="currentRadius"></span>%;</code>
+       </div>
+     </div><!-- end .slider -->
+   </div><!-- end .container -->
+   <script type="text/javascript" src="main.js"></script>
+ </body><!-- end body -->
+</html><!-- end html -->
